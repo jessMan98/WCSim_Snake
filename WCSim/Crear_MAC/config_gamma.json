@@ -1,0 +1,10 @@
+{
+    "particle_1": {
+        "name": "gamma",
+        "specification": "MCA",
+        "energy": {
+            "MeV": "500"
+        },
+        "simulations": "10"
+    }
+}

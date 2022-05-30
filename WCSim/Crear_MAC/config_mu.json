@@ -1,0 +1,10 @@
+{
+    "particle_1": {
+        "name": "mu-",
+        "specification": "MCA",
+        "energy": {
+            "MeV": "500"
+        },
+        "simulations": "10"
+    }
+}

@@ -1,1 +1,30 @@
-sds
+# Sample setup macro with no visualization
+
+/run/verbose 1
+/tracking/verbose 0
+/hits/verbose 0
+#/grdm/verbose 0
+
+/WCSim/PMTQEMethod     Stacking_Only
+/WCSim/PMTCollEff on
+/WCSim/SavePi0 false
+/DAQ/Digitizer SKI
+/DAQ/Trigger NDigits
+/control/execute macros/daq.mac
+
+#/DarkRate/SetDetectorElement tank
+/DarkRate/SetDarkMode 1
+/DarkRate/SetDarkHigh 100000
+/DarkRate/SetDarkLow 0
+/DarkRate/SetDarkWindow 4000
+
+/mygen/generator gun
+/gun/particle @particle
+/gun/energy @energy_value @energy_unit
+
+/gun/direction 1 0 0 
+/gun/position 0 0 0  
+#/grdm/nucleusLimits 214 214 83 83 
+
+/WCSimIO/RootFile @output_name.root
+/run/beamOn @simulations
