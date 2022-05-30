@@ -2,9 +2,9 @@
 
 ## Creación Archivos Mac
 
-1. Ubicarse en la ruta:
+1. Ubicarse en la ruta donde se descargo el repositorio y entrar a la siguiente carpeta:
 ```
-cd /WCSim/scripts/linux
+cd /WCSim_Snake/WCSim/scripts/linux
 ```
 2. Cambiar permisos al archivo:  **creacionMAC.sh**
 ```
