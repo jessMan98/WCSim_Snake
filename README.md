@@ -4,7 +4,7 @@
 
 1. Ubicarse en la ruta donde se descargo el repositorio y entrar a la siguiente carpeta:
 ```
-cd /WCSim_Snake/WCSim/scripts/linux
+cd WCSim_Snake/WCSim/scripts/linux
 ```
 2. Cambiar permisos al archivo:  **creacionMAC.sh**
 ```
@@ -17,7 +17,7 @@ sudo chmod +x creacionMAC.sh
 4. Visualizar el resultado en la siguiente ruta: 
 
 ```
-cd /WCSim/data/1_MAC/VaryE/{particula}
+cd WCSim/data/1_MAC/VaryE/{particula}
 ```
   Donde {particula} = _/e-_ , _/gamma_ , _/mu-_
 
