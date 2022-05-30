@@ -31,7 +31,7 @@ cd WCSim/scripts/snakemake
 ```
 2. Crear contenedor sandbox:
 ```
-singularity build --fakeroot --sandbox docker://manu33/wcsim:1.2  
+singularity build --fakeroot --sandbox wcsim/ docker://manu33/wcsim:1.2  
 ``` 
 3. Crear carpeta compartida
 ```
