@@ -7,7 +7,7 @@ VARIACION = ["VaryE"]
 shell.prefix("set +uoex pipefail; ")
 
 # Contenedor sandbox a utilizar
-container: '../wcsim-dir'
+container: '../wcsim'
 
 rule all:
 	input:
