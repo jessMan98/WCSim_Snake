@@ -7,15 +7,14 @@ VARIACION = ["VaryE"]
 shell.prefix("set +uoex pipefail; ")
 
 # Contenedor sandbox a utilizar
-container: '../wcsim-dir'
+container: '../wcsim'
 
 rule all:
 	input:
 		expand('../../../data/3_NPZ_event_dump/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
 		expand('../../../data/4_Imagen_NPZ/{variacion}/{particula}/IMAGES_wcs_MCA_{particula}__{l_corrida}_500_MeV.npy', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
 
-
-rule root_to_npz:
+rule npz_to_image:
 	input:'../../../data/3_NPZ_event_dump/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz'
 	output:'../../../data/4_Imagen_NPZ/{variacion}/{particula}/IMAGES_wcs_MCA_{particula}__{l_corrida}_500_MeV.npy'
     
@@ -27,5 +26,6 @@ rule root_to_npz:
 	shell:
 		"""
 			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f {params.i}
-			mv ~/{params.o} {params.dirO}
+			cd ~; mv {params.o} {params.dirO}
+			
 		"""
