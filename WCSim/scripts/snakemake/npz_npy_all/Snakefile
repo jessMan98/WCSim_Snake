@@ -7,7 +7,7 @@ VARIACION = ["VaryE"]
 shell.prefix("set +uoex pipefail; ")
 
 # Contenedor sandbox a utilizar
-container: '../wcsim-dir'
+container: '../wcsim'
 
 rule all:
 	input:
@@ -26,5 +26,5 @@ rule npz_to_image:
 	shell:
 		"""
 			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f {params.i}
-            mv ~/{params.o} {params.dirO}
+            cd ~; mv {params.o} {params.dirO}
         """
