@@ -33,10 +33,15 @@ cd WCSim_Snake/WCSim/scripts/snakemake
 ```
 singularity build --fakeroot --sandbox wcsim/ docker://manu33/wcsim:1.2  
 ``` 
-3. Crear carpeta compartida
+3. Crear carpeta compartida:
 ```
 singularity exec --fakeroot --writable wcsim/ /bin/bash -c "mkdir /home/compartida"
 ```
+4. Activar Snakemake:
+```
+conda activate snakemake
+```
+
 Con estos pasos se podrán ejecutar los scripts de Snakemake.
 ___
 ## Mantained by:
