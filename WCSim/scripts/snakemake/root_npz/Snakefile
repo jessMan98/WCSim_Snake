@@ -1,17 +1,23 @@
+# Wildcards
 CORRIDA = range(0,12)
+PARTICULA = ["e-"]
+VARIACION = ["VaryE"]
+
+# Comando establecido para todas las reglas (en especial para archivo run.sh)
 shell.prefix("set +uoex pipefail; ")
+
+# Contenedor sandbox a utilizar
+container: '../wcsim'
 
 rule all:
 	input:
-		expand('../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root', l_corrida=CORRIDA),
-		expand('../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA)
+		expand('../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
+		expand('../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
 
 rule root_to_npz:
 	input:'../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root'
 	
 	output:'../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz'
-    
-	container: "../wcsim-dir"
 	
 	params:
 		i = "/home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root",
