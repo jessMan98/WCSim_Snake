@@ -1,0 +1,11 @@
+# Utilizacion de Singularity
+use-singularity: True
+
+# Vinculacion de carpetas de host a contenedor
+singularity-args: "--fakeroot --writable --no-home --bind /home/many/Descargas/MCA_AutoSC-main/data:/home/compartida"
+
+# Banderas para ejecutar snakemake
+rerun-incomplete: True
+printshellcmds: True
+cores: 4
+forceall: True
