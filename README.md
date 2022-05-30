@@ -1,6 +1,9 @@
 # Ejecucion Procesamiento WCSim
 
-1. Ubicarse en la ruta: **WCSim/scripts/snakemake**
+1. Ubicarse en la ruta: 
+```
+cd WCSim/scripts/snakemake
+```
 2. Crear contenedor sandbox:
 ```
 singularity build --fakeroot --sandbox docker://manu33/wcsim:1.2  
@@ -9,11 +12,7 @@ singularity build --fakeroot --sandbox docker://manu33/wcsim:1.2
 ```
 singularity exec --fakeroot --writable /bin/bash -c "mkdir /home/compartida"
 ```
-Con estos 2 pasos se podran ejecutar los scripts de Snakemake.
-
-
-
-
-
-Mantained by:
-**Jesus Manuel Aleman Gonzalez** 
+Con estos pasos se podran ejecutar los scripts de Snakemake.
+___
+## Mantained by:
+:man_technologist: Jesús Manuel Alemán González.
