@@ -27,7 +27,7 @@ ___
 
 1. Ubicarse en la ruta: 
 ```
-cd WCSim/scripts/snakemake
+cd WCSim_Snake/WCSim/scripts/snakemake
 ```
 2. Crear contenedor sandbox:
 ```
