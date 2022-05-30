@@ -1,0 +1,36 @@
+# Wildcards
+CORRIDA = range(0,12)
+PARTICULA = ["e-"]
+VARIACION = ["VaryE"]
+
+# Comando establecido para todas las reglas (en especial para archivo run.sh)
+shell.prefix("set +uoex pipefail; ")
+
+# Contenedor sandbox a utilizar
+container: '../wcsim-dir'
+
+rule all:
+    input:
+        expand('../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
+        expand('../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
+
+rule mac_to_root:
+    input:'../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac'
+    
+    output:'../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
+    
+    message: "Ejecutando archivos MAC"
+
+    params: 
+       i = '/home/compartida/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac',
+       o = 'wcs_MCA_{particula}__{l_corrida}_500_MeV.root',
+       d = '/home/compartida/2_ROOT/{variacion}/{particula}'    
+
+    shell: 
+        """
+	        cd /home/neutrino/software
+	        source run.sh
+            rm {params.o}
+            ./WCSim {params.i}
+	        mv {params.o} {params.d}
+        """
