@@ -17,7 +17,7 @@ sudo chmod +x creacionMAC.sh
 4. Visualizar el resultado en la siguiente ruta: 
 
 ```
-cd WCSim/data/1_MAC/VaryE/{particula}
+cd ../../data/1_MAC/VaryE/{particula}
 ```
   Donde {particula} = _/e-_ , _/gamma_ , _/mu-_
 
