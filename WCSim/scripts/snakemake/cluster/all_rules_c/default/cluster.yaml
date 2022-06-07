@@ -1,0 +1,8 @@
+__default__:
+  jobname: "Snake-test"
+  n: 36
+  time: "0-20:00"
+  partition: "q1"
+  output: "snake.%N,%j.out"
+  error: "snake.%N,%j.err"
+
