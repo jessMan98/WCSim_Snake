@@ -1,0 +1,2863 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count    min threads    max threads
+-------------------------  -------  -------------  -------------
+all                              1              1              1
+mac_to_root                     36              1              1
+npz_to_image                    36              1              1
+root_to_event_dump              36              1              1
+root_to_event_dump_barrel       36              1              1
+total                          145              1              1
+
+Select jobs to execute...
+
+[Fri Jun 10 15:54:34 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root
+    jobid: 20
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.mac
+	        mv wcs_MCA_gamma__7_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+
+[Fri Jun 10 15:54:34 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+    jobid: 12
+    wildcards: variacion=VaryE, particula=e-, l_corrida=11
+    resources: tmpdir=/tmp
+
+Activating singularity image ../../wcsim
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+	        mv wcs_MCA_e-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Fri Jun 10 15:54:34 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root
+    jobid: 35
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.mac
+	        mv wcs_MCA_mu-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+
+[Fri Jun 10 15:54:34 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root
+    jobid: 21
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=8
+    resources: tmpdir=/tmp
+
+Activating singularity image ../../wcsim
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.mac
+	        mv wcs_MCA_gamma__8_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:54:48 2022]
+Finished job 35.
+1 of 145 steps (1%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:54:48 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+    jobid: 11
+    wildcards: variacion=VaryE, particula=e-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+	        mv wcs_MCA_e-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:54:50 2022]
+Finished job 20.
+2 of 145 steps (1%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:54:50 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+    jobid: 34
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac
+	        mv wcs_MCA_mu-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:54:50 2022]
+Finished job 21.
+3 of 145 steps (2%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:54:50 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root
+    jobid: 26
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.mac
+	        mv wcs_MCA_mu-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:54:50 2022]
+Finished job 12.
+4 of 145 steps (3%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:54:50 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root
+    jobid: 18
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.mac
+	        mv wcs_MCA_gamma__5_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:05 2022]
+Finished job 34.
+5 of 145 steps (3%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:05 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz
+    jobid: 57
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:05 2022]
+Finished job 26.
+6 of 145 steps (4%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:05 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+    jobid: 3
+    wildcards: variacion=VaryE, particula=e-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:05 2022]
+Finished job 11.
+7 of 145 steps (5%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:05 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+    jobid: 10
+    wildcards: variacion=VaryE, particula=e-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+	        mv wcs_MCA_e-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:07 2022]
+Finished job 57.
+8 of 145 steps (6%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:07 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root
+    jobid: 19
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.mac
+	        mv wcs_MCA_gamma__6_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:15 2022]
+Finished job 18.
+9 of 145 steps (6%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:15 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root
+    jobid: 27
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.mac
+	        mv wcs_MCA_mu-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:21 2022]
+Finished job 10.
+10 of 145 steps (7%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:21 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root
+    jobid: 33
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.mac
+	        mv wcs_MCA_mu-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:23 2022]
+Finished job 19.
+11 of 145 steps (8%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:23 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+    jobid: 4
+    wildcards: variacion=VaryE, particula=e-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+	        mv wcs_MCA_e-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:31 2022]
+Finished job 27.
+12 of 145 steps (8%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:31 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root
+    jobid: 25
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.mac
+	        mv wcs_MCA_mu-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:36 2022]
+Finished job 33.
+13 of 145 steps (9%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:36 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz
+    jobid: 82
+    wildcards: variacion=VaryE, particula=e-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:37 2022]
+Finished job 82.
+14 of 145 steps (10%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:37 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz
+    jobid: 105
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:39 2022]
+Finished job 105.
+15 of 145 steps (10%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:39 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__8_500_MeV.npy
+    jobid: 129
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__8_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:40 2022]
+Finished job 4.
+16 of 145 steps (11%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:40 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root
+    jobid: 17
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.mac
+	        mv wcs_MCA_gamma__4_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:42 2022]
+Finished job 129.
+17 of 145 steps (12%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:42 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz
+    jobid: 106
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:43 2022]
+Finished job 106.
+18 of 145 steps (12%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:44 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz
+    jobid: 40
+    wildcards: variacion=VaryE, particula=e-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:46 2022]
+Finished job 25.
+19 of 145 steps (13%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:47 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root
+    jobid: 28
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.mac
+	        mv wcs_MCA_mu-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:47 2022]
+Finished job 40.
+20 of 145 steps (14%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:47 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz
+    jobid: 97
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:48 2022]
+Finished job 97.
+21 of 145 steps (14%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:48 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__3_500_MeV.npy
+    jobid: 112
+    wildcards: variacion=VaryE, particula=e-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__3_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:51 2022]
+Finished job 112.
+22 of 145 steps (15%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:51 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+    jobid: 5
+    wildcards: variacion=VaryE, particula=e-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+	        mv wcs_MCA_e-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:56 2022]
+Finished job 17.
+23 of 145 steps (16%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:56 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz
+    jobid: 89
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:55:58 2022]
+Finished job 89.
+24 of 145 steps (17%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:55:58 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root
+    jobid: 36
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.mac
+	        mv wcs_MCA_mu-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:01 2022]
+Finished job 28.
+25 of 145 steps (17%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:01 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz
+    jobid: 64
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:04 2022]
+Finished job 64.
+26 of 145 steps (18%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:04 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__3_500_MeV.npy
+    jobid: 136
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__3_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:07 2022]
+Finished job 136.
+27 of 145 steps (19%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:07 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz
+    jobid: 100
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:07 2022]
+Finished job 5.
+28 of 145 steps (19%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:07 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz
+    jobid: 41
+    wildcards: variacion=VaryE, particula=e-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:08 2022]
+Finished job 100.
+29 of 145 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:08 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz
+    jobid: 77
+    wildcards: variacion=VaryE, particula=e-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:09 2022]
+Finished job 77.
+30 of 145 steps (21%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:09 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz
+    jobid: 48
+    wildcards: variacion=VaryE, particula=e-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:11 2022]
+Finished job 41.
+31 of 145 steps (21%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:11 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__4_500_MeV.npy
+    jobid: 113
+    wildcards: variacion=VaryE, particula=e-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__4_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:12 2022]
+Finished job 48.
+32 of 145 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:12 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__11_500_MeV.npy
+    jobid: 120
+    wildcards: variacion=VaryE, particula=e-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__11_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:13 2022]
+Finished job 36.
+33 of 145 steps (23%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:13 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root
+    jobid: 13
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.mac
+	        mv wcs_MCA_gamma__0_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:14 2022]
+Finished job 113.
+34 of 145 steps (23%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:14 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz
+    jobid: 72
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:15 2022]
+Finished job 120.
+35 of 145 steps (24%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:15 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz
+    jobid: 98
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:17 2022]
+Finished job 72.
+36 of 145 steps (25%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:17 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__11_500_MeV.npy
+    jobid: 144
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__11_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:17 2022]
+Finished job 98.
+37 of 145 steps (26%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:17 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz
+    jobid: 56
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:19 2022]
+Finished job 144.
+38 of 145 steps (26%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:19 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz
+    jobid: 90
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:20 2022]
+Finished job 56.
+39 of 145 steps (27%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:20 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__7_500_MeV.npy
+    jobid: 128
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__7_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:21 2022]
+Finished job 90.
+40 of 145 steps (28%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:21 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+    jobid: 9
+    wildcards: variacion=VaryE, particula=e-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+	        mv wcs_MCA_e-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:23 2022]
+Finished job 128.
+41 of 145 steps (28%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:23 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz
+    jobid: 76
+    wildcards: variacion=VaryE, particula=e-, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:25 2022]
+Finished job 76.
+42 of 145 steps (29%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:25 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root
+    jobid: 32
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.mac
+	        mv wcs_MCA_mu-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:30 2022]
+Finished job 13.
+43 of 145 steps (30%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:30 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz
+    jobid: 49
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:33 2022]
+Finished job 49.
+44 of 145 steps (30%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:33 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__0_500_MeV.npy
+    jobid: 121
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__0_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:36 2022]
+Finished job 121.
+45 of 145 steps (31%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:36 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+    jobid: 1
+    wildcards: variacion=VaryE, particula=e-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+	        mv wcs_MCA_e-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:37 2022]
+Finished job 9.
+46 of 145 steps (32%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:37 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz
+    jobid: 108
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:39 2022]
+Finished job 108.
+47 of 145 steps (32%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:39 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz
+    jobid: 81
+    wildcards: variacion=VaryE, particula=e-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:40 2022]
+Finished job 32.
+48 of 145 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:41 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz
+    jobid: 68
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:41 2022]
+Finished job 81.
+49 of 145 steps (34%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:41 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz
+    jobid: 104
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:42 2022]
+Finished job 104.
+50 of 145 steps (34%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:42 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz
+    jobid: 107
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:43 2022]
+Finished job 68.
+51 of 145 steps (35%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:43 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz
+    jobid: 85
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:44 2022]
+Finished job 107.
+52 of 145 steps (36%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:44 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root
+    jobid: 30
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.mac
+	        mv wcs_MCA_mu-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:44 2022]
+Finished job 85.
+53 of 145 steps (37%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:44 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz
+    jobid: 62
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:48 2022]
+Finished job 62.
+54 of 145 steps (37%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:48 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root
+    jobid: 14
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.mac
+	        mv wcs_MCA_gamma__1_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:52 2022]
+Finished job 1.
+55 of 145 steps (38%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:52 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+    jobid: 2
+    wildcards: variacion=VaryE, particula=e-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+	        mv wcs_MCA_e-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:56:58 2022]
+Finished job 30.
+56 of 145 steps (39%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:56:58 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz
+    jobid: 53
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:01 2022]
+Finished job 53.
+57 of 145 steps (39%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:01 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz
+    jobid: 55
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:04 2022]
+Finished job 14.
+58 of 145 steps (40%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:04 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz
+    jobid: 66
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:04 2022]
+Finished job 55.
+59 of 145 steps (41%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:04 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz
+    jobid: 73
+    wildcards: variacion=VaryE, particula=e-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:06 2022]
+Finished job 73.
+60 of 145 steps (41%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:06 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz
+    jobid: 50
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:07 2022]
+Finished job 66.
+61 of 145 steps (42%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:07 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__5_500_MeV.npy
+    jobid: 138
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__5_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:09 2022]
+Finished job 50.
+62 of 145 steps (43%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:09 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__1_500_MeV.npy
+    jobid: 122
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__1_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:09 2022]
+Finished job 2.
+63 of 145 steps (43%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:09 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__6_500_MeV.npy
+    jobid: 127
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__6_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:10 2022]
+Finished job 138.
+64 of 145 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:10 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz
+    jobid: 74
+    wildcards: variacion=VaryE, particula=e-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:11 2022]
+Finished job 122.
+65 of 145 steps (45%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:11 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz
+    jobid: 46
+    wildcards: variacion=VaryE, particula=e-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:12 2022]
+Finished job 74.
+66 of 145 steps (46%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:12 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root
+    jobid: 22
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.mac
+	        mv wcs_MCA_gamma__9_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:12 2022]
+Finished job 127.
+67 of 145 steps (46%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:12 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+    jobid: 7
+    wildcards: variacion=VaryE, particula=e-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+	        mv wcs_MCA_e-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:14 2022]
+Finished job 46.
+68 of 145 steps (47%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:14 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz
+    jobid: 84
+    wildcards: variacion=VaryE, particula=e-, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:16 2022]
+Finished job 84.
+69 of 145 steps (48%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:16 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz
+    jobid: 70
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:19 2022]
+Finished job 70.
+70 of 145 steps (48%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:19 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz
+    jobid: 54
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:22 2022]
+Finished job 54.
+71 of 145 steps (49%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:22 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz
+    jobid: 38
+    wildcards: variacion=VaryE, particula=e-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:25 2022]
+Finished job 38.
+72 of 145 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:25 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+    jobid: 8
+    wildcards: variacion=VaryE, particula=e-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+	        mv wcs_MCA_e-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:27 2022]
+Finished job 22.
+73 of 145 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:27 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root
+    jobid: 23
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.mac
+	        mv wcs_MCA_gamma__10_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:28 2022]
+Finished job 7.
+74 of 145 steps (51%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:28 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root
+    jobid: 31
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.mac
+	        mv wcs_MCA_mu-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:41 2022]
+Finished job 8.
+75 of 145 steps (52%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:41 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz
+    jobid: 47
+    wildcards: variacion=VaryE, particula=e-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:43 2022]
+Finished job 23.
+76 of 145 steps (52%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:43 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz
+    jobid: 44
+    wildcards: variacion=VaryE, particula=e-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:43 2022]
+Finished job 31.
+77 of 145 steps (53%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:43 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz
+    jobid: 43
+    wildcards: variacion=VaryE, particula=e-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:44 2022]
+Finished job 47.
+78 of 145 steps (54%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:44 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz
+    jobid: 67
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:46 2022]
+Finished job 44.
+79 of 145 steps (54%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:46 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz
+    jobid: 58
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:46 2022]
+Finished job 43.
+80 of 145 steps (55%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:46 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz
+    jobid: 59
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:47 2022]
+Finished job 67.
+81 of 145 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:47 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__10_500_MeV.npy
+    jobid: 119
+    wildcards: variacion=VaryE, particula=e-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__10_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:49 2022]
+Finished job 58.
+82 of 145 steps (57%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:49 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__9_500_MeV.npy
+    jobid: 130
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__9_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:50 2022]
+Finished job 59.
+83 of 145 steps (57%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:50 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz
+    jobid: 45
+    wildcards: variacion=VaryE, particula=e-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:50 2022]
+Finished job 119.
+84 of 145 steps (58%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:50 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz
+    jobid: 69
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:52 2022]
+Finished job 130.
+85 of 145 steps (59%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:52 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__6_500_MeV.npy
+    jobid: 139
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__6_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:53 2022]
+Finished job 45.
+86 of 145 steps (59%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:53 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__7_500_MeV.npy
+    jobid: 116
+    wildcards: variacion=VaryE, particula=e-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__7_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:53 2022]
+Finished job 69.
+87 of 145 steps (60%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:53 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__9_500_MeV.npy
+    jobid: 118
+    wildcards: variacion=VaryE, particula=e-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__9_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:55 2022]
+Finished job 139.
+88 of 145 steps (61%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:55 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz
+    jobid: 63
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:56 2022]
+Finished job 116.
+89 of 145 steps (61%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:56 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__4_500_MeV.npy
+    jobid: 125
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__4_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:56 2022]
+Finished job 118.
+90 of 145 steps (62%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:56 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root
+    jobid: 15
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.mac
+	        mv wcs_MCA_gamma__2_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:58 2022]
+Finished job 63.
+91 of 145 steps (63%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:58 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz
+    jobid: 71
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:57:59 2022]
+Finished job 125.
+92 of 145 steps (63%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:57:59 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__8_500_MeV.npy
+    jobid: 117
+    wildcards: variacion=VaryE, particula=e-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__8_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:00 2022]
+Finished job 71.
+93 of 145 steps (64%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:00 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__7_500_MeV.npy
+    jobid: 140
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__7_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:02 2022]
+Finished job 117.
+94 of 145 steps (65%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:02 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz
+    jobid: 93
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:03 2022]
+Finished job 140.
+95 of 145 steps (66%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:03 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__1_500_MeV.npy
+    jobid: 110
+    wildcards: variacion=VaryE, particula=e-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__1_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:04 2022]
+Finished job 93.
+96 of 145 steps (66%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:04 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz
+    jobid: 94
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:05 2022]
+Finished job 94.
+97 of 145 steps (67%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:05 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz
+    jobid: 79
+    wildcards: variacion=VaryE, particula=e-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:06 2022]
+Finished job 110.
+98 of 145 steps (68%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:06 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__5_500_MeV.npy
+    jobid: 126
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__5_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:07 2022]
+Finished job 79.
+99 of 145 steps (68%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:07 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__8_500_MeV.npy
+    jobid: 141
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=8
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__8_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:09 2022]
+Finished job 126.
+100 of 145 steps (69%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:09 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root
+    jobid: 16
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.mac
+	        mv wcs_MCA_gamma__3_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:09 2022]
+Finished job 141.
+101 of 145 steps (70%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:09 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root
+    jobid: 24
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.mac
+	        mv wcs_MCA_gamma__11_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:12 2022]
+Finished job 15.
+102 of 145 steps (70%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:12 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__1_500_MeV.npy
+    jobid: 134
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__1_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:14 2022]
+Finished job 134.
+103 of 145 steps (71%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:14 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz
+    jobid: 102
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:16 2022]
+Finished job 102.
+104 of 145 steps (72%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:16 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz
+    jobid: 86
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=1
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:17 2022]
+Finished job 86.
+105 of 145 steps (72%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:17 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz
+    jobid: 92
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:19 2022]
+Finished job 92.
+106 of 145 steps (73%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:19 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__10_500_MeV.npy
+    jobid: 143
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__10_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:22 2022]
+Finished job 143.
+107 of 145 steps (74%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:22 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz
+    jobid: 87
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:23 2022]
+Finished job 87.
+108 of 145 steps (74%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:23 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz
+    jobid: 51
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:25 2022]
+Finished job 24.
+109 of 145 steps (75%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:25 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz
+    jobid: 96
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:26 2022]
+Finished job 16.
+110 of 145 steps (76%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:26 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz
+    jobid: 52
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:26 2022]
+Finished job 51.
+111 of 145 steps (77%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:26 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz
+    jobid: 88
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:26 2022]
+Finished job 96.
+112 of 145 steps (77%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:26 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz
+    jobid: 60
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:27 2022]
+Finished job 88.
+113 of 145 steps (78%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:27 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz
+    jobid: 80
+    wildcards: variacion=VaryE, particula=e-, l_corrida=7
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:28 2022]
+Finished job 52.
+114 of 145 steps (79%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:28 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz
+    jobid: 99
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:29 2022]
+Finished job 80.
+115 of 145 steps (79%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:29 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz
+    jobid: 37
+    wildcards: variacion=VaryE, particula=e-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:29 2022]
+Finished job 60.
+116 of 145 steps (80%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:29 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__10_500_MeV.npy
+    jobid: 131
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__10_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:30 2022]
+Finished job 99.
+117 of 145 steps (81%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:30 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__2_500_MeV.npy
+    jobid: 135
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__2_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:32 2022]
+Finished job 135.
+118 of 145 steps (81%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:32 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz
+    jobid: 91
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:32 2022]
+Finished job 131.
+119 of 145 steps (82%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:32 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz
+    jobid: 61
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:32 2022]
+Finished job 37.
+120 of 145 steps (83%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:33 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root
+    jobid: 29
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.mac
+	        mv wcs_MCA_mu-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:33 2022]
+Finished job 91.
+121 of 145 steps (83%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:33 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__2_500_MeV.npy
+    jobid: 123
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__2_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:35 2022]
+Finished job 61.
+122 of 145 steps (84%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:35 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz
+    jobid: 103
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:36 2022]
+Finished job 123.
+123 of 145 steps (85%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:36 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__0_500_MeV.npy
+    jobid: 133
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__0_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:36 2022]
+Finished job 103.
+124 of 145 steps (86%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:36 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__6_500_MeV.npy
+    jobid: 115
+    wildcards: variacion=VaryE, particula=e-, l_corrida=6
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__6_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:38 2022]
+Finished job 133.
+125 of 145 steps (86%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:38 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz
+    jobid: 83
+    wildcards: variacion=VaryE, particula=e-, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:39 2022]
+Finished job 115.
+126 of 145 steps (87%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:39 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__9_500_MeV.npy
+    jobid: 142
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=9
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__9_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:40 2022]
+Finished job 83.
+127 of 145 steps (88%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:40 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz
+    jobid: 95
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=10
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/gamma
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:42 2022]
+Finished job 142.
+128 of 145 steps (88%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:42 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__0_500_MeV.npy
+    jobid: 109
+    wildcards: variacion=VaryE, particula=e-, l_corrida=0
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__0_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:42 2022]
+Finished job 95.
+129 of 145 steps (89%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:42 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__3_500_MeV.npy
+    jobid: 124
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=3
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__3_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:45 2022]
+Finished job 109.
+130 of 145 steps (90%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:45 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/gamma/IMAGES_wcs_MCA_gamma__11_500_MeV.npy
+    jobid: 132
+    wildcards: variacion=VaryE, particula=gamma, l_corrida=11
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_gamma__11_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:45 2022]
+Finished job 124.
+131 of 145 steps (90%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:45 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+    jobid: 6
+    wildcards: variacion=VaryE, particula=e-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+	        mv wcs_MCA_e-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:47 2022]
+Finished job 29.
+132 of 145 steps (91%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:47 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz
+    jobid: 101
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:48 2022]
+Finished job 132.
+133 of 145 steps (92%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:48 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz
+    jobid: 65
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/mu-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:48 2022]
+Finished job 101.
+134 of 145 steps (92%) done
+[Fri Jun 10 15:58:50 2022]
+Finished job 65.
+135 of 145 steps (93%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:58:50 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/mu-/IMAGES_wcs_MCA_mu-__4_500_MeV.npy
+    jobid: 137
+    wildcards: variacion=VaryE, particula=mu-, l_corrida=4
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_mu-__4_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:58:52 2022]
+Finished job 137.
+136 of 145 steps (94%) done
+[Fri Jun 10 15:59:00 2022]
+Finished job 6.
+137 of 145 steps (94%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:59:00 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz
+    jobid: 42
+    wildcards: variacion=VaryE, particula=e-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+
+[Fri Jun 10 15:59:00 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz
+    jobid: 78
+    wildcards: variacion=VaryE, particula=e-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:59:01 2022]
+Finished job 78.
+138 of 145 steps (95%) done
+[Fri Jun 10 15:59:02 2022]
+Finished job 42.
+139 of 145 steps (96%) done
+Select jobs to execute...
+
+[Fri Jun 10 15:59:02 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__5_500_MeV.npy
+    jobid: 114
+    wildcards: variacion=VaryE, particula=e-, l_corrida=5
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__5_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 15:59:05 2022]
+Finished job 114.
+140 of 145 steps (97%) done

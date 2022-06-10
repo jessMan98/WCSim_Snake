@@ -1,0 +1,106 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                          count    min threads    max threads
+-------------------------  -------  -------------  -------------
+all                              1              1              1
+mac_to_root                      1              1              1
+npz_to_image                     1              1              1
+root_to_event_dump               1              1              1
+root_to_event_dump_barrel        1              1              1
+total                            5              1              1
+
+Select jobs to execute...
+
+[Fri Jun 10 11:43:16 2022]
+rule mac_to_root:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+    jobid: 3
+    wildcards: variacion=VaryE, particula=e-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 11:43:30 2022]
+Finished job 3.
+1 of 5 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun 10 11:43:30 2022]
+rule root_to_event_dump_barrel:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz
+    jobid: 27
+    wildcards: variacion=VaryE, particula=e-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump_barrel.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz /home/compartida/3_NPZ_event_dump_barrel/VaryE/e-
+		
+Activating singularity image ../../wcsim
+
+[Fri Jun 10 11:43:30 2022]
+rule root_to_event_dump:
+    input: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+    output: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz
+    jobid: 15
+    wildcards: variacion=VaryE, particula=e-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root 
+			mv /home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz /home/compartida/3_NPZ_event_dump/VaryE/e-
+		
+Activating singularity image ../../wcsim
+[Fri Jun 10 11:43:31 2022]
+Finished job 27.
+2 of 5 steps (40%) done
+[Fri Jun 10 11:43:32 2022]
+Finished job 15.
+3 of 5 steps (60%) done
+Select jobs to execute...
+
+[Fri Jun 10 11:43:32 2022]
+rule npz_to_image:
+    input: ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz
+    output: ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__2_500_MeV.npy
+    jobid: 39
+    wildcards: variacion=VaryE, particula=e-, l_corrida=2
+    resources: tmpdir=/tmp
+
+
+			python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f /home/compartida/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz
+            cd ~; mv IMAGES_wcs_MCA_e-__2_500_MeV.npy /home/compartida/4_Imagen_NPZ/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Jun 10 11:43:35 2022]
+Finished job 39.
+4 of 5 steps (80%) done
+Select jobs to execute...
+
+[Fri Jun 10 11:43:35 2022]
+localrule all:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz, ../../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__0_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__1_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__2_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__3_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__4_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__5_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__6_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__7_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__8_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__9_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__10_500_MeV.npz, ../../../../data/3_NPZ_event_dump_barrel/VaryE/e-/wcs_MCA_e-__11_500_MeV.npz, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__0_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__1_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__2_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__3_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__4_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__5_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__6_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__7_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__8_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__9_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__10_500_MeV.npy, ../../../../data/4_Imagen_NPZ/VaryE/e-/IMAGES_wcs_MCA_e-__11_500_MeV.npy
+    jobid: 0
+    resources: tmpdir=/tmp
+
+[Fri Jun 10 11:43:35 2022]
+Finished job 0.
+5 of 5 steps (100%) done
+Complete log: /home/many/Documentos/WCSim_Snake/WCSim/scripts/snakemake/maquina_local/all_rules_e/.snakemake/log/2022-06-10T114316.425144.snakemake.log

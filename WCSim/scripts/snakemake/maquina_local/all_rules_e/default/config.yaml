@@ -1,0 +1,10 @@
+# Utilizacion de Singularity
+use-singularity: True
+
+# Vinculacion de carpetas de host a contenedor
+singularity-args: "--fakeroot --writable --no-home --bind /home/many/Documentos/WCSim_Snake/WCSim/data:/home/compartida"
+
+# Banderas para ejecutar snakemake
+rerun-incomplete: True
+printshellcmds: True
+cores: 4
