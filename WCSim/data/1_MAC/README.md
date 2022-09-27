@@ -1,1 +1,2 @@
-## Variación de Energía con partículas e-, gamma, mu-
+## Archivos **.mac**
+Variación de Energía con partículas e-, gamma, mu-
