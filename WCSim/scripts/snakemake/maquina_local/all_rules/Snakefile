@@ -1,12 +1,19 @@
+# Numero de corridas (archivos a procesar)
 CORRIDA = range(0,12)
-PARTICULA = ["e-","gamma","mu-"]
+"""
+Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
+i.e PARTICULA = ["gamma"] o 
+	PARTICULA = ["mu-"] o
+    PARTICULA = ["e-","gamma","mu-"]
+"""
+PARTICULA = ["e-"]
 VARIACION = ["VaryE"]
 
 # Comando establecido para todas las reglas (en especial para archivo run.sh)
 shell.prefix("set +uoex pipefail; ")
 
 # Contenedor sandbox a utilizar
-container: '../wcsim'
+container: '../../wcsim'
 
 rule all:
 	input:
