@@ -7,5 +7,7 @@ singularity-args: "--fakeroot --writable --no-home --bind /home/many/Documentos/
 # Banderas para ejecutar snakemake
 rerun-incomplete: True
 printshellcmds: True
+keep-going: True
+# Cambiar por el número de cores disponibles en tu máquina
 cores: 4
-forceall: True
+
