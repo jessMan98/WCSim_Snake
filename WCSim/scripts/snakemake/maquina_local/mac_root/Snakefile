@@ -3,7 +3,7 @@ CORRIDA = range(0,12)
 """
 Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
 i.e PARTICULA = ["gamma"] o 
-	PARTICULA = ["mu-"] o
+    PARTICULA = ["mu-"] o
     PARTICULA = ["e-","gamma","mu-"]
 """
 PARTICULA = ["e-","gamma","mu-"]
@@ -33,10 +33,10 @@ rule mac_to_root:
        d = '/home/compartida/2_ROOT/{variacion}/{particula}'    
 
     shell: 
-        """
-	        cd /home/neutrino/software
+    	"""
+		cd /home/neutrino/software
 	        source run.sh
-            rm {params.o}
-            ./WCSim {params.i}
+            	rm {params.o}
+            	./WCSim {params.i}
 	        mv {params.o} {params.d}
-        """
+     	"""
