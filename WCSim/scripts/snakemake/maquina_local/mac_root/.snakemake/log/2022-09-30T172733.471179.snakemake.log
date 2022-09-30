@@ -1,0 +1,633 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+mac_to_root       36              1              1
+total             37              1              1
+
+Select jobs to execute...
+
+[Fri Sep 30 17:27:34 2022]
+Job 15: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.mac
+	        mv wcs_MCA_mu-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+
+[Fri Sep 30 17:27:34 2022]
+Job 36: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.mac
+	        mv wcs_MCA_mu-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+
+[Fri Sep 30 17:27:34 2022]
+Job 29: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.mac
+	        mv wcs_MCA_gamma__9_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+
+[Fri Sep 30 17:27:34 2022]
+Job 6: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.mac
+	        mv wcs_MCA_mu-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:10 2022]
+Finished job 15.
+1 of 37 steps (3%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:10 2022]
+Job 1: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+	        mv wcs_MCA_e-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:11 2022]
+Finished job 36.
+2 of 37 steps (5%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:12 2022]
+Job 31: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+	        mv wcs_MCA_e-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:14 2022]
+Finished job 29.
+3 of 37 steps (8%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:14 2022]
+Job 24: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.mac
+	        mv wcs_MCA_mu-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:17 2022]
+Finished job 6.
+4 of 37 steps (11%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:17 2022]
+Job 9: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.mac
+	        mv wcs_MCA_mu-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:54 2022]
+Finished job 24.
+5 of 37 steps (14%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:54 2022]
+Job 17: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.mac
+	        mv wcs_MCA_gamma__5_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:54 2022]
+Finished job 1.
+6 of 37 steps (16%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:54 2022]
+Job 3: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.mac
+	        mv wcs_MCA_mu-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:54 2022]
+Finished job 31.
+7 of 37 steps (19%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:54 2022]
+Job 32: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.mac
+	        mv wcs_MCA_gamma__10_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:28:55 2022]
+Finished job 9.
+8 of 37 steps (22%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:28:55 2022]
+Job 25: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+	        mv wcs_MCA_e-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:29:29 2022]
+Finished job 3.
+9 of 37 steps (24%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:29:30 2022]
+Job 10: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+	        mv wcs_MCA_e-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:29:31 2022]
+Finished job 17.
+10 of 37 steps (27%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:29:31 2022]
+Job 18: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.mac
+	        mv wcs_MCA_mu-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:29:33 2022]
+Finished job 32.
+11 of 37 steps (30%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:29:33 2022]
+Job 2: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.mac
+	        mv wcs_MCA_gamma__0_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:29:33 2022]
+Finished job 25.
+12 of 37 steps (32%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:29:33 2022]
+Job 33: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.mac
+	        mv wcs_MCA_mu-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:06 2022]
+Finished job 10.
+13 of 37 steps (35%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:06 2022]
+Job 26: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.mac
+	        mv wcs_MCA_gamma__8_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:07 2022]
+Finished job 18.
+14 of 37 steps (38%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:07 2022]
+Job 11: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.mac
+	        mv wcs_MCA_gamma__3_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:08 2022]
+Finished job 33.
+15 of 37 steps (41%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:08 2022]
+Job 20: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.mac
+	        mv wcs_MCA_gamma__6_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:11 2022]
+Finished job 2.
+16 of 37 steps (43%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:11 2022]
+Job 5: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.mac
+	        mv wcs_MCA_gamma__1_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:41 2022]
+Finished job 26.
+17 of 37 steps (46%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:41 2022]
+Job 22: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+	        mv wcs_MCA_e-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:43 2022]
+Finished job 11.
+18 of 37 steps (49%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:43 2022]
+Job 34: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+	        mv wcs_MCA_e-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:44 2022]
+Finished job 20.
+19 of 37 steps (51%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:44 2022]
+Job 23: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.mac
+	        mv wcs_MCA_gamma__7_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:30:50 2022]
+Finished job 5.
+20 of 37 steps (54%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:30:50 2022]
+Job 8: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.mac
+	        mv wcs_MCA_gamma__2_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:31:22 2022]
+Finished job 22.
+21 of 37 steps (57%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:31:22 2022]
+Job 27: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.mac
+	        mv wcs_MCA_mu-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:31:23 2022]
+Finished job 23.
+22 of 37 steps (59%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:31:24 2022]
+Job 12: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.mac
+	        mv wcs_MCA_mu-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:31:25 2022]
+Finished job 34.
+23 of 37 steps (62%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:31:25 2022]
+Job 14: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.mac
+	        mv wcs_MCA_gamma__4_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:31:32 2022]
+Finished job 8.
+24 of 37 steps (65%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:31:32 2022]
+Job 21: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.mac
+	        mv wcs_MCA_mu-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:05 2022]
+Finished job 27.
+25 of 37 steps (68%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:05 2022]
+Job 4: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+	        mv wcs_MCA_e-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:06 2022]
+Finished job 12.
+26 of 37 steps (70%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:06 2022]
+Job 19: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+	        mv wcs_MCA_e-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:10 2022]
+Finished job 14.
+27 of 37 steps (73%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:10 2022]
+Job 30: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac
+	        mv wcs_MCA_mu-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:11 2022]
+Finished job 21.
+28 of 37 steps (76%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:11 2022]
+Job 13: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+	        mv wcs_MCA_e-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:41 2022]
+Finished job 4.
+29 of 37 steps (78%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:42 2022]
+Job 28: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+	        mv wcs_MCA_e-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:45 2022]
+Finished job 19.
+30 of 37 steps (81%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:45 2022]
+Job 7: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:32:53 2022]
+Finished job 13.
+31 of 37 steps (84%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:32:53 2022]
+Job 35: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_gamma__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.mac
+	        mv wcs_MCA_gamma__11_500_MeV.root /home/compartida/2_ROOT/VaryE/gamma
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:33:16 2022]
+Finished job 28.
+32 of 37 steps (86%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:33:16 2022]
+Job 16: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+	        mv wcs_MCA_e-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:33:20 2022]
+Finished job 7.
+33 of 37 steps (89%) done
+[Fri Sep 30 17:33:23 2022]
+Finished job 35.
+34 of 37 steps (92%) done
+[Fri Sep 30 17:33:47 2022]
+Finished job 16.
+35 of 37 steps (95%) done
+Terminating processes on user request, this might take some time.
+[Fri Sep 30 17:36:51 2022]
+Error in rule mac_to_root:
+    jobid: 30
+    output: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac
+	        mv wcs_MCA_mu-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2022-09-30T172733.471179.snakemake.log

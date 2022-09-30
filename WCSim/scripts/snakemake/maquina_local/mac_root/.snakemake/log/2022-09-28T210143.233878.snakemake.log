@@ -1,0 +1,223 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+mac_to_root       12              1              1
+total             13              1              1
+
+Select jobs to execute...
+
+[Wed Sep 28 21:01:43 2022]
+Job 1: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+	        mv wcs_MCA_e-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 21:01:43 2022]
+Job 10: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+	        mv wcs_MCA_e-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 21:01:43 2022]
+Job 2: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+	        mv wcs_MCA_e-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 21:01:43 2022]
+Job 12: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+	        mv wcs_MCA_e-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:22 2022]
+Finished job 2.
+1 of 13 steps (8%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:02:22 2022]
+Job 8: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+	        mv wcs_MCA_e-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:22 2022]
+Finished job 10.
+2 of 13 steps (15%) done
+[Wed Sep 28 21:02:22 2022]
+Finished job 1.
+3 of 13 steps (23%) done
+[Wed Sep 28 21:02:22 2022]
+Finished job 12.
+4 of 13 steps (31%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:02:23 2022]
+Job 7: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+	        mv wcs_MCA_e-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 21:02:23 2022]
+Job 9: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+	        mv wcs_MCA_e-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 21:02:23 2022]
+Job 5: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+	        mv wcs_MCA_e-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Select jobs to execute...
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:55 2022]
+Finished job 7.
+5 of 13 steps (38%) done
+
+[Wed Sep 28 21:02:55 2022]
+Job 6: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+	        mv wcs_MCA_e-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:56 2022]
+Finished job 5.
+6 of 13 steps (46%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:02:56 2022]
+Job 4: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+	        mv wcs_MCA_e-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:56 2022]
+Finished job 9.
+7 of 13 steps (54%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:02:56 2022]
+Job 3: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:02:56 2022]
+Finished job 8.
+8 of 13 steps (62%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:02:56 2022]
+Job 11: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+	        mv wcs_MCA_e-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 21:03:35 2022]
+Finished job 3.
+9 of 13 steps (69%) done
+[Wed Sep 28 21:03:36 2022]
+Finished job 11.
+10 of 13 steps (77%) done
+[Wed Sep 28 21:03:36 2022]
+Finished job 6.
+11 of 13 steps (85%) done
+[Wed Sep 28 21:03:36 2022]
+Finished job 4.
+12 of 13 steps (92%) done
+Select jobs to execute...
+
+[Wed Sep 28 21:03:36 2022]
+localrule all:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+    jobid: 0
+    reason: Input files updated by another job: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+    resources: tmpdir=/tmp
+
+[Wed Sep 28 21:03:36 2022]
+Finished job 0.
+13 of 13 steps (100%) done
+Complete log: .snakemake/log/2022-09-28T210143.233878.snakemake.log

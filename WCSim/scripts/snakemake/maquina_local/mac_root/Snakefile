@@ -6,7 +6,7 @@ i.e PARTICULA = ["gamma"] o
 	PARTICULA = ["mu-"] o
     PARTICULA = ["e-","gamma","mu-"]
 """
-PARTICULA = ["e-"]
+PARTICULA = ["e-","gamma","mu-"]
 VARIACION = ["VaryE"]
 
 # Comando establecido para todas las reglas (en especial para archivo run.sh)
@@ -17,13 +17,13 @@ container: '../../wcsim'
 
 rule all:
     input:
-        expand('../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
-        expand('../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
+        expand('../../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
+        expand('../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
 
 rule mac_to_root:
-    input:'../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac'
+    input:'../../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac'
     
-    output:'../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
+    output:'../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
     
     message: "Ejecutando archivos MAC"
 

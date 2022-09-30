@@ -1,0 +1,41 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+mac_to_root        1              1              1
+total              2              1              1
+
+Select jobs to execute...
+
+[Fri Sep 30 17:36:55 2022]
+Job 30: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_mu-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac
+	        mv wcs_MCA_mu-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/mu-
+        
+Activating singularity image ../../wcsim
+[Fri Sep 30 17:37:12 2022]
+Finished job 30.
+1 of 2 steps (50%) done
+Select jobs to execute...
+
+[Fri Sep 30 17:37:12 2022]
+localrule all:
+    input: ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.mac, ../../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac, ../../../../data/1_MAC/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.mac, ../../../../data/1_MAC/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.mac, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__0_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__1_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__2_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__3_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__4_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__5_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__6_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__7_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__8_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__10_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__10_500_MeV.root, ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root, ../../../../data/2_ROOT/VaryE/gamma/wcs_MCA_gamma__11_500_MeV.root, ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__11_500_MeV.root
+    jobid: 0
+    reason: Input files updated by another job: ../../../../data/2_ROOT/VaryE/mu-/wcs_MCA_mu-__9_500_MeV.root
+    resources: tmpdir=/tmp
+
+[Fri Sep 30 17:37:12 2022]
+Finished job 0.
+2 of 2 steps (100%) done
+Complete log: .snakemake/log/2022-09-30T173655.002279.snakemake.log

@@ -1,0 +1,343 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job            count    min threads    max threads
+-----------  -------  -------------  -------------
+all                1              1              1
+mac_to_root       12              1              1
+total             13              1              1
+
+Select jobs to execute...
+
+[Wed Sep 28 20:56:28 2022]
+Job 1: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+	        mv wcs_MCA_e-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 20:56:28 2022]
+Job 10: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+	        mv wcs_MCA_e-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 20:56:28 2022]
+Job 2: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+	        mv wcs_MCA_e-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+
+[Wed Sep 28 20:56:28 2022]
+Job 12: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+	        mv wcs_MCA_e-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+Activating singularity image ../../wcsim
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 2
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__1_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__1_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__1_500_MeV.mac
+	        mv wcs_MCA_e-__1_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Wed Sep 28 20:56:28 2022]
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 1
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__0_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
+	        mv wcs_MCA_e-__0_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Error in rule mac_to_root:
+    jobid: 12
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__11_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__11_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__11_500_MeV.mac
+	        mv wcs_MCA_e-__11_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 10
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__9_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__9_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__9_500_MeV.mac
+	        mv wcs_MCA_e-__9_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Wed Sep 28 20:56:28 2022]
+Job 8: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+	        mv wcs_MCA_e-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+Select jobs to execute...
+
+[Wed Sep 28 20:56:28 2022]
+Job 7: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+	        mv wcs_MCA_e-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+
+Activating singularity image ../../wcsim
+[Wed Sep 28 20:56:28 2022]
+Job 9: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+	        mv wcs_MCA_e-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 20:56:28 2022]
+Job 5: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+	        mv wcs_MCA_e-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Select jobs to execute...
+Activating singularity image ../../wcsim
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 8
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__7_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__7_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__7_500_MeV.mac
+	        mv wcs_MCA_e-__7_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Wed Sep 28 20:56:28 2022]
+Job 6: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+	        mv wcs_MCA_e-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 7
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__6_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__6_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__6_500_MeV.mac
+	        mv wcs_MCA_e-__6_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 5
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__4_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__4_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__4_500_MeV.mac
+	        mv wcs_MCA_e-__4_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 9
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__8_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__8_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__8_500_MeV.mac
+	        mv wcs_MCA_e-__8_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Wed Sep 28 20:56:28 2022]
+Job 4: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+	        mv wcs_MCA_e-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+Select jobs to execute...
+
+[Wed Sep 28 20:56:28 2022]
+Job 3: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+
+[Wed Sep 28 20:56:28 2022]
+Job 11: Ejecutando archivos MAC
+Reason: Missing output files: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+
+
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+	        mv wcs_MCA_e-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+Activating singularity image ../../wcsim
+[Wed Sep 28 20:56:28 2022]
+Error in rule mac_to_root:
+    jobid: 6
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__5_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__5_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__5_500_MeV.mac
+	        mv wcs_MCA_e-__5_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 28 20:56:29 2022]
+Error in rule mac_to_root:
+    jobid: 4
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__3_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__3_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__3_500_MeV.mac
+	        mv wcs_MCA_e-__3_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 28 20:56:29 2022]
+Error in rule mac_to_root:
+    jobid: 3
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__2_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__2_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__2_500_MeV.mac
+	        mv wcs_MCA_e-__2_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Wed Sep 28 20:56:29 2022]
+Error in rule mac_to_root:
+    jobid: 11
+    output: ../../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__10_500_MeV.root
+    shell:
+        
+	        cd /home/neutrino/software
+	        source run.sh
+            rm wcs_MCA_e-__10_500_MeV.root
+            ./WCSim /home/compartida/1_MAC/VaryE/e-/wcs_MCA_e-__10_500_MeV.mac
+	        mv wcs_MCA_e-__10_500_MeV.root /home/compartida/2_ROOT/VaryE/e-
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2022-09-28T205625.464237.snakemake.log
