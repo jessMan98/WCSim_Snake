@@ -6,7 +6,7 @@ i.e PARTICULA = ["gamma"] o
 	PARTICULA = ["mu-"] o
     PARTICULA = ["e-","gamma","mu-"]
 """
-PARTICULA = ["e-"]
+PARTICULA = ["e-","gamma","mu-"]
 VARIACION = ["VaryE"]
 
 # Comando establecido para todas las reglas (en especial para archivo run.sh)
@@ -17,24 +17,22 @@ container: '../../wcsim'
 
 rule all:
 	input:
-		expand('../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
-		expand('../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
+		expand('../../../../data/2_ROOT/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
+		expand('../../../../data/3_NPZ_event_dump/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
 
 rule root_to_npz:
-	input:'../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root'
+	input:'../../../../data/2_ROOT/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
 	
-	output:'../../../data/3_NPZ_event_dump/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz'
+	output:'../../../../data/3_NPZ_event_dump/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz'
 	
 	params:
-		i = "/home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.root",
-        o = "/home/compartida/2_ROOT/VaryE/e-/wcs_MCA_e-__{l_corrida}_500_MeV.npz",
-		dirO = "/home/compartida/3_NPZ_event_dump/VaryE/e-"
+		i = "/home/compartida/2_ROOT/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root",
+		dirO = "/home/compartida/3_NPZ_event_dump/VaryE/{particula}"
 	
 	shell:
 		"""
 			cd /home/neutrino/software
 			source run.sh
 			cd /home/WatChMal/DataTools
-			time python3 event_dump.py {params.i} 
-			mv {params.o} {params.dirO}
+			time python3 event_dump.py {params.i} -d {params.dirO}
 		"""
