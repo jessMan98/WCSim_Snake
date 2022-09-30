@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule mac_to_root in line 23 of /home/many/WCSim_Snake/WCSim/scripts/snakemake/maquina_local/mac_root/Snakefile:
-Missing input files for rule mac_to_root:
-    output: ../../../data/2_ROOT/VaryE/e-/wcs_MCA_e-__0_500_MeV.root
-    wildcards: variacion=VaryE, particula=e-, l_corrida=0
-    affected files:
-        ../../../data/1_MAC/VaryE/e-/wcs_MCA_e-__0_500_MeV.mac
