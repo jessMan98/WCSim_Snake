@@ -2,8 +2,9 @@
 CORRIDA = range(0,12)
 """
 Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
-i.e PARTICULA = ["gamma"] o 
-    PARTICULA = ["mu-"] o
+i.e PARTICULA = ["gamma"] ó 
+    PARTICULA = ["mu-"] ó
+     PARTICULA = ["e-"] ó
     PARTICULA = ["e-","gamma","mu-"]
 """
 PARTICULA = ["e-","gamma","mu-"]
@@ -22,7 +23,6 @@ rule all:
 
 rule mac_to_root:
     input:'../../../../data/1_MAC/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.mac'
-    
     output:'../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
     
     message: "Ejecutando archivos MAC"
@@ -34,9 +34,9 @@ rule mac_to_root:
 
     shell: 
     	"""
-		cd /home/neutrino/software
-	        source run.sh
-            	rm {params.o}
-            	./WCSim {params.i}
+            cd /home/neutrino/software
+            source run.sh
+            rm {params.o}
+            ./WCSim {params.i}
 	        mv {params.o} {params.d}
      	"""
