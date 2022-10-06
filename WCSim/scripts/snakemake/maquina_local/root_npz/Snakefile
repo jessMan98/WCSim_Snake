@@ -22,7 +22,6 @@ rule all:
 
 rule root_to_npz:
 	input:'../../../../data/2_ROOT/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
-	
 	output:'../../../../data/3_NPZ_event_dump/VaryE/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz'
 	
 	params:
