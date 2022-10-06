@@ -1,0 +1,7 @@
+__default__:
+  jobname: "Snake"
+  node: 36
+  time: "0-20:00"
+  partition: "q3"
+  output: "snake.%N,%j.out"
+  error: "snake.%N,%j.err"
