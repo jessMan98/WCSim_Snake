@@ -1,9 +1,17 @@
-CORRIDA = range(0,12)
+# Numero de corridas (archivos a procesar)
+CORRIDA = range(0,72)
+"""
+Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
+i.e PARTICULA = ["gamma"] ó
+    PARTICULA = ["mu-"] ó
+	 PARTICULA = ["e-"] ó
+    PARTICULA = ["e-","gamma","mu-"]
+"""
 PARTICULA = ["e-","gamma","mu-"] 
 VARIACION = ["VaryE"]
 
 # Comando establecido para todas las reglas (en especial para archivo run.sh)
-shell.prefix("set +uoex pipefail; ")
+shell.prefix("set +uoe pipefail; ")
 
 # Contenedor sandbox a utilizar
 container: '../../wcsim'
@@ -25,15 +33,15 @@ rule mac_to_root:
        o = 'wcs_MCA_{particula}__{l_corrida}_500_MeV.root',
        d = '/home/compartida/2_ROOT/{variacion}/{particula}'    
     
-   group: "mygroup"
+   group: "MR"
     
    shell: 
-     """
-	cd /home/neutrino/software
-	source run.sh
-        rm {params.o}
-        ./WCSim {params.i}
-	mv {params.o} {params.d}
+      """
+	      cd /home/neutrino/software
+	      source run.sh
+         rm {params.o}
+         ./WCSim {params.i}
+	      mv {params.o} {params.d}
      """
 
 rule root_to_event_dump:
@@ -42,19 +50,17 @@ rule root_to_event_dump:
 	
    params:
       i = "/home/compartida/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root",
-      o = "/home/compartida/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz",
       dirO = "/home/compartida/3_NPZ_event_dump/{variacion}/{particula}"
 	
    group: "mygroup"
 
    shell: 
-     """
-	cd /home/neutrino/software
-	source run.sh
-	cd /home/WatChMal/DataTools
-	time python3 event_dump.py {params.i} 
-	mv {params.o} {params.dirO}
-     """
+      """
+         cd /home/neutrino/software
+         source run.sh
+         cd /home/WatChMal/DataTools
+         time python3 event_dump.py {params.i} -d {params.dirO}
+      """
 
 rule root_to_event_dump_barrel:
    input:'../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
@@ -62,19 +68,17 @@ rule root_to_event_dump_barrel:
 
    params:
       i = "/home/compartida/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root",
-      o = "/home/compartida/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz",
       dirO = "/home/compartida/3_NPZ_event_dump_barrel/{variacion}/{particula}"
 	
    group: "mygroup"
 
    shell:
-     """
-	cd /home/neutrino/software
-	source run.sh
-	cd /home/WatChMal/DataTools		
-	time python3 event_dump_barrel.py {params.i} 
-	mv {params.o} {params.dirO}
-     """
+      """
+         cd /home/neutrino/software
+         source run.sh
+         cd /home/WatChMal/DataTools		
+         time python3 event_dump_barrel.py {params.i} -d {params.dirO}
+      """
 
 rule npz_to_image:
    input:'../../../../data/3_NPZ_event_dump/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz'
@@ -88,7 +92,8 @@ rule npz_to_image:
    group:"mygroup"
 
    shell:
-     """
-	python3 /home/Tools_HKM/npz_to_image.py -m /home/compartida/Geometries/IWCD_geometry_mPMT.npy -f {params.i}
-        cd ~; mv {params.o} {params.dirO}
+      """
+         cd /home/Tools_HKM
+	      python3 npz_to_image.py -m /home/compartida/Geometry/IWCD_geometry_mPMT.npy -f {params.i}
+         mv {params.o} {params.dirO}
      """
