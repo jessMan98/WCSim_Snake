@@ -1,0 +1,18 @@
+# Archivo de configuracion del cluster
+cluster-config: "cluster.yaml"
+
+# Comandos para mandar por slurm
+cluster: "sbatch --job-name={cluster.jobname} --ntasks={cluster.node}  --time={cluster.time} --partition={cluster.partition} --output={cluster.output} --error={cluster.error}"
+
+# Uitlizacion de Singularity
+use-singularity: True
+
+# Vinculacion de carpetas de host a contenedor. Cambiar ruta por tu usuario.
+singularity-args: "--fakeroot --writable --no-home --bind /lustre/home/many/WCSim_Snake/WCSim/data:/home/compartida"
+
+# Banderas para ejecutar snakemake
+rerun-incomplete: True
+printshellcmds: True
+
+
+
