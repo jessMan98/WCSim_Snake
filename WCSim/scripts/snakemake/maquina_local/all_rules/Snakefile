@@ -2,8 +2,9 @@
 CORRIDA = range(0,12)
 """
 Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
-i.e PARTICULA = ["gamma"] o 
-	PARTICULA = ["mu-"] o
+i.e PARTICULA = ["gamma"] ó
+    PARTICULA = ["mu-"] ó
+	 PARTICULA = ["e-"] ó
     PARTICULA = ["e-","gamma","mu-"]
 """
 PARTICULA = ["e-","gamma","mu-"]
