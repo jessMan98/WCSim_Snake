@@ -1,0 +1,40 @@
+# Numero de corridas (archivos a procesar)
+CORRIDA = range(1000)
+"""
+Eliminar o agregar de acuerdo a la particula que quieras ejecutar.
+i.e PARTICULA = ["gamma"] ó 
+    PARTICULA = ["mu-"] ó
+    PARTICULA = ["e-"] ó
+    PARTICULA = ["e-","gamma","mu-"]
+"""
+PARTICULA = ["e-","gamma","mu-"]
+VARIACION = ["VaryE"]
+
+# Comando establecido para todas las reglas (en especial para archivo run.sh)
+shell.prefix("set +uoex pipefail; ")
+
+# Contenedor sandbox a utilizar
+container: '../../wcsim'
+
+rule all:
+	input:
+		expand('../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION),
+		expand('../../../../data/3_NPZ_event_dump/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz', l_corrida=CORRIDA, particula=PARTICULA, variacion=VARIACION)
+
+rule root_to_npz:
+	input:'../../../../data/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root'
+	output:'../../../../data/3_NPZ_event_dump/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.npz'
+        
+    group: "mygroup"
+	
+	params:
+		i = "/home/compartida/2_ROOT/{variacion}/{particula}/wcs_MCA_{particula}__{l_corrida}_500_MeV.root",
+		dirO = "/home/compartida/3_NPZ_event_dump/{variacion}/{particula}"
+	
+	shell:
+		"""
+			cd /home/neutrino/software
+			source run.sh
+			cd /home/WatChMal/DataTools
+			time python3 event_dump.py {params.i} -d {params.dirO}
+		"""
